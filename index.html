@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="titleinline">
+    <h1>Oilers Ipsum</h1>
+    <img src="images/OilersLogo.png" class="logo">
+</div>
+    <div class="wrapper_center">
+        <form method="post" id="generator">
+        <div id="form_top">
+        
+            <label for="paragraphs">How many paragraphs of text would you like?</label>
+          <br>
+            <input type="number" name="paragraphs" id="pNum" value="2" maxlength="2">
+              Paragraph Length:
+            <label for="small">Small
+            <input type="radio" name="size" class="size" id="small" value="small" checked/></label>
+            
+            <label for="medium">Medium
+            <input type="radio" name="size" class="size"  id="medium" value="medium"/></label>
+            
+            <label for="large">Large
+            <input type="radio" name="size" class="size"  id="large" value="large"/></label>
+        </div>
+        <br>
+        <div id="form_bottom">
+            <label for="start_with" class="start_with">Start with "Let's go Oilers!"</em> <input type="checkbox" name="start_with" id="start_with" value="true"></label>
+        </div>
+        
+        <input type="submit" value="Generate Text" id="generate"/>
+       
+    <div id="output"  value="output">
+        <p>Oilers Ipsum is a Lorem Ipsum Generator made for Oilers fans.  Add the number of paragraphs and the length then click generate!</p>
+    </div>
+     <br>
+      </form>
+
+</body>
+<script src="js/jquery-1.8.2.min.js"></script>
+<script src="js/main.js"></script>
+</html>
