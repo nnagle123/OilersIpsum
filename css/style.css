@@ -6,7 +6,7 @@ html {
     background-image: url('../images/ice.jpg') ;
     color: #111;
     font-family: Arial, Helvetica, sans-serif;
-    background-repeat: no-repeat; 
+    /* background-repeat: no-repeat;  */
     background-size: cover; 
 }
 
@@ -21,14 +21,14 @@ h1{
 	grid-column-start: 1;
 	grid-column-end: 2;
 	margin-top: 6%;
-	margin-left: 22%;
+	margin-left: 23.5%;
 }
 
 .logo{
 	width: 250px;
 	grid-column-start: 2;
 	grid-column-end: 3;
-	margin-right: 4%;
+	margin-right: 4.5%;
 	margin-bottom: 2%;
 }
 
@@ -38,7 +38,7 @@ form{
 	background-color: #FF4C01;
 	display: block;
 	height: 500px;
-	width: 100%;
+	width: 70%;
 	border: solid 4px #002040;
 	margin-left: 0%;
 }
@@ -67,9 +67,10 @@ form{
    padding: 2%;
    font-size: .9em;
    margin-top: 2%;
-   margin-auto;
+   z-index: 99 !important;
 
- }
+}
+ 
 
  .parLength{
 	 margin: 2%;
@@ -101,8 +102,10 @@ form{
 	 margin: auto;
 	 height: 34px;
 	 border-radius: 5px;
- 
  }
+ #generate:hover{
+	box-shadow: 2px 3px 2px #002040;
+  }
 
  p{
 	 text-align: center;
@@ -116,4 +119,10 @@ form{
 
  input[type="radio" i] {
 	 margin-right: 15px;
+ }
+
+ .center{
+	 display: flex;
+	 justify-content: center;
+	 
  }
