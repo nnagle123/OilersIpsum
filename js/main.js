@@ -4,7 +4,7 @@ $(function() {
         random: function(c) {
             return Math.floor(c * (Math.random() % 1))
         },
-        randomBetween: function(d, c) {
+        inbetween: function(d, c) {
             return d + jQuery.random(c - d + 1)
         }
     });
@@ -186,7 +186,9 @@ $(function() {
 "Tyler Benson called up from minors from Bakersfield-AHL",
 "Cooper Marody called up from minors from Bakersfield-AHL",
 "Ryan McLeod called up from minors from Bakersfield-AHL",
-"Mike Green granted Leave of Absence Opted out of 2020 playoffs", "Tippett does not look happy about that call.", "Neal puts one in the back of the net" );
+"Mike Green granted Leave of Absence Opted out of 2020 playoffs", 
+"Tippett does not look happy about that call.", 
+"Neal puts one in the back of the net" );
         var g = e.length;
         var k = $("#pNum").val();
         var m = $("input[type=radio]:checked").val();
@@ -219,7 +221,7 @@ $(function() {
             } else {
                 j = a(e[b(e)]) + " "
             }
-            h = $.randomBetween(f, d);
+            h = $.inbetween(f, d);
             for (x = 0; x <= h; x++) {
                 if (x % 7 == 1) {
                     j += e[b(e)] + ". " + a(e[b(e)]) + " "
