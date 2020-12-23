@@ -8,13 +8,13 @@ $(function() {
             return maxLength + jQuery.random(radioInput - maxLength + 1)
         }
     });
-    function b(maxLength, radioInput) {
+    function generateText(maxLength, radioInput) {
         if (!Array.indexOf) {
-            Array.prototype.indexOf = function(m) {
+            Array.prototype.indexOf = function(numInputCheck) {
                 var numInput = 0
-                  , j = this.length;
-                for (; j--; numInput++) {
-                    if (this[numInput] == m) {
+                  , checkBoxSelect = this.length;
+                for (; checkBoxSelect--; numInput++) {
+                    if (this[numInput] == numInputCheck) {
                         return numInput
                     }
                 }
@@ -33,7 +33,7 @@ $(function() {
         }
         return numSenInPara == 1 ? arrayConstructor[0] : arrayConstructor
     }
-    function a(radioInput) {
+    function senStructure(radioInput) {
         return radioInput.charAt(0).toUpperCase() + radioInput.substr(1)
     }
     $("#generator").submit(function() {
@@ -220,19 +220,19 @@ $(function() {
         for (i = 0; i < numInput; i++) {
             var paraOutput = "<p>";
             if (radioInput == true && i == 0) {
-                var j = "Let's go Oilers! "
+                var checkBoxSelect = "Let's go Oilers! "
             } else {
-                j = a(arrayConstructor[b(arrayConstructor)]) + " "
+                checkBoxSelect = senStructure(arrayConstructor[generateText(arrayConstructor)]) + " "
             }
             numSenInPara = $.inbetween(minLength, maxLength);
-            for (x = 0; x <= numSenInPara; x++) {
-                if (x % 7 == 1) {
-                    j += arrayConstructor[b(arrayConstructor)] + ". " + a(arrayConstructor[b(arrayConstructor)]) + " "
+            for (sen = 0; sen <= numSenInPara; sen++) {
+                if (sen % 7 == 1) {
+                    checkBoxSelect += arrayConstructor[generateText(arrayConstructor)] + ". " + senStructure(arrayConstructor[generateText(arrayConstructor)]) + " "
                 } else {
-                    j += arrayConstructor[b(arrayConstructor)] + " "
+                    checkBoxSelect += arrayConstructor[generateText(arrayConstructor)] + " "
                 }
             }
-            paraOutput += $.trim(j) + "</p>";
+            paraOutput += $.trim(checkBoxSelect) + "</p>";
             $("#output").append(paraOutput)
         }
         return false
