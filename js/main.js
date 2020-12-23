@@ -1,44 +1,44 @@
 
 $(function() {
     jQuery.extend({
-        random: function(c) {
-            return Math.floor(c * (Math.random() % 1))
+        random: function(radioInput) {
+            return Math.floor(radioInput * (Math.random() % 1))
         },
-        inbetween: function(d, c) {
-            return d + jQuery.random(c - d + 1)
+        inbetween: function(maxLength, radioInput) {
+            return maxLength + jQuery.random(radioInput - maxLength + 1)
         }
     });
-    function b(d, c) {
+    function b(maxLength, radioInput) {
         if (!Array.indexOf) {
             Array.prototype.indexOf = function(m) {
-                var k = 0
+                var numInput = 0
                   , j = this.length;
-                for (; j--; k++) {
-                    if (this[k] == m) {
-                        return k
+                for (; j--; numInput++) {
+                    if (this[numInput] == m) {
+                        return numInput
                     }
                 }
                 return -1
             }
         }
-        var f, g, e = [], h = c || 1;
-        if (d instanceof Array === false || h > (f = d.length)) {
+        var minLength, arrayLength, arrayConstructor = [], numSenInPara = radioInput || 1;
+        if (maxLength instanceof Array === false || numSenInPara > (minLength = maxLength.length)) {
             return null
         }
-        while (e.length != h) {
-            g = Math.floor(Math.random() * f);
-            if (e.indexOf(g) == -1) {
-                e.push(g)
+        while (arrayConstructor.length != numSenInPara) {
+            arrayLength = Math.floor(Math.random() * minLength);
+            if (arrayConstructor.indexOf(arrayLength) == -1) {
+                arrayConstructor.push(arrayLength)
             }
         }
-        return h == 1 ? e[0] : e
+        return numSenInPara == 1 ? arrayConstructor[0] : arrayConstructor
     }
-    function a(c) {
-        return c.charAt(0).toUpperCase() + c.substr(1)
+    function a(radioInput) {
+        return radioInput.charAt(0).toUpperCase() + radioInput.substr(1)
     }
     $("#generator").submit(function() {
         $("#output p").remove();
-        var e = Array("Zack Kassian scores!",
+        var arrayConstructor = Array("Zack Kassian scores!",
 "A nice cut in by Zack Kassian",
 "He's got quick hands",
 "Great save by Mike Smith",
@@ -189,49 +189,54 @@ $(function() {
 "Mike Green granted Leave of Absence Opted out of 2020 playoffs", 
 "Tippett does not look happy about that call.", 
 "Neal puts one in the back of the net" );
-        var g = e.length;
-        var k = $("#pNum").val();
-        var m = $("input[type=radio]:checked").val();
-        var h = 0;
-        var d = 0;
-        var f = 0;
-        var c = false;
+        
+
+
+        var arrayLength = arrayConstructor.length;
+        var numInput = $("#pNum").val();
+        var radioCheckSelect = $("input[type=radio]:checked").val();
+        var numSenInPara = 0;
+        var maxLength = 0;
+        var minLength = 0;
+        var radioInput = false;
       
         if ($("input[type=checkbox]:checked").val() == "true") {
-            c = true
+            radioInput = true
         }
-        switch (m) {
+        switch (radioCheckSelect) {
         case "small":
-            f = 4;
-            d = 9;
+            minLength = 4;
+            maxLength = 9;
             break;
         case "medium":
-            f = 8;
-            d = 12;
+            minLength = 8;
+            maxLength = 12;
             break;
         case "large":
-            f = 10;
-            d = 20;
+            minLength = 10;
+            maxLength = 20;
             break
         }
-        for (i = 0; i < k; i++) {
-            var l = "<p>";
-            if (c == true && i == 0) {
+        for (i = 0; i < numInput; i++) {
+            var paraOutput = "<p>";
+            if (radioInput == true && i == 0) {
                 var j = "Let's go Oilers! "
             } else {
-                j = a(e[b(e)]) + " "
+                j = a(arrayConstructor[b(arrayConstructor)]) + " "
             }
-            h = $.inbetween(f, d);
-            for (x = 0; x <= h; x++) {
+            numSenInPara = $.inbetween(minLength, maxLength);
+            for (x = 0; x <= numSenInPara; x++) {
                 if (x % 7 == 1) {
-                    j += e[b(e)] + ". " + a(e[b(e)]) + " "
+                    j += arrayConstructor[b(arrayConstructor)] + ". " + a(arrayConstructor[b(arrayConstructor)]) + " "
                 } else {
-                    j += e[b(e)] + " "
+                    j += arrayConstructor[b(arrayConstructor)] + " "
                 }
             }
-            l += $.trim(j) + ".</p>";
-            $("#output").append(l)
+            paraOutput += $.trim(j) + "</p>";
+            $("#output").append(paraOutput)
         }
         return false
     })
 });
+
+

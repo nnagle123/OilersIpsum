@@ -68,7 +68,6 @@ form{
    font-size: .9em;
    margin-top: 2%;
    z-index: 99 !important;
-
 }
  
 
@@ -124,5 +123,5 @@ form{
  .center{
 	 display: flex;
 	 justify-content: center;
-	 
+	padding-bottom: 60px;
  }
