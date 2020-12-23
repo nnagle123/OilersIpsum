@@ -17,6 +17,7 @@ html {
 h1{
     font-size: 6em;
 	text-shadow: 4px 5px 4px #002040;
+	-webkit-text-stroke: 2px #ffffff;
 	color: #FF4C01;
 	grid-column-start: 1;
 	grid-column-end: 2;
@@ -125,3 +126,42 @@ form{
 	 justify-content: center;
 	padding-bottom: 60px;
  }
+
+
+ @media only screen and (max-width: 600px) {
+	
+	
+		h1{
+			font-size: 4em;
+			text-align: center;
+			margin-left: 0;
+		}
+	
+		.logo {
+			display: none;
+		}
+	
+	  }
+
+	  @media only screen and (max-width: 400px) {
+	
+	
+		h1{
+			font-size: 2.5em;
+			text-align: center;
+			margin-left: 0;
+		}
+	
+		.logo {
+			display: none;
+		}
+
+		.howmany{
+			font-size: 1em;
+		}
+
+		.parLength{
+			font-size: .9em;
+		}
+	
+	  }
