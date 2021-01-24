@@ -11,7 +11,7 @@
 * Only positive phrases about the Oilers will be accepted
 * Please ensure no swearing or foul language
 * Please ensure that prases are written in proper JS format.
-* Phrases making fun of Matthew Tkachuk are not only acceptable but encouraged. (just kidding...  but not really. 😉 ) 
+* Phrases making fun of Matthew Tkachuk are not only acceptable but encouraged. (just kidding... but not really 😉) 
 
 ![](images/OilersIpsum.JPG)
 
