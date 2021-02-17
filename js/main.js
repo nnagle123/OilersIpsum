@@ -191,12 +191,7 @@ $(function() {
 "Tyler Benson called up from minors from Bakersfield-AHL",
 "Cooper Marody called up from minors from Bakersfield-AHL",
 "Ryan McLeod called up from minors from Bakersfield-AHL",
-"Mike Green granted Leave of Absence Opted out of 2020 playoffs", 
-"Tippett does not look happy about that call.", 
-"Neal puts one in the back of the net",
-"Connor McDavid scored his second goal of the night 42 seconds into overtime to give the Edmonton Oilers a 4-3 victory over the Toronto Maple Leafs",
-"Connor McDavid goes coast to coast",
-"Mikko Koskinen with a huge glove save");
+"Mike Green granted Leave of Absence Opted out of 2020 playoffs");
 
 
         var arrayLength = arrayConstructor.length;
