@@ -43,7 +43,12 @@ $(function() {
 "He's got quick hands",
 "Great save by Mike Smith",
 "Wow!",
-"A chance for McDavid,",
+"Tippett does not look happy about that call.", 
+"Neal puts one in the back of the net",
+"Connor McDavid scored his second goal of the night 42 seconds into overtime to give the Edmonton Oilers a 4-3 victory over the Toronto Maple Leafs",
+"Connor McDavid goes coast to coast",
+"Mikko Koskinen with a huge glove save",
+"A chance for McDavid",
 "Connor McDavid waits...  What a play!!!",
 "What a goal!",
 "Connor McDavid, welcome back!",
@@ -188,8 +193,10 @@ $(function() {
 "Ryan McLeod called up from minors from Bakersfield-AHL",
 "Mike Green granted Leave of Absence Opted out of 2020 playoffs", 
 "Tippett does not look happy about that call.", 
-"Neal puts one in the back of the net" );
-        
+"Neal puts one in the back of the net",
+"Connor McDavid scored his second goal of the night 42 seconds into overtime to give the Edmonton Oilers a 4-3 victory over the Toronto Maple Leafs",
+"Connor McDavid goes coast to coast",
+"Mikko Koskinen with a huge glove save");
 
 
         var arrayLength = arrayConstructor.length;
