@@ -107,7 +107,6 @@ $(function() {
 "here's a left from Nugent-Hopkins.",
 "the battle of Alberta",
 "Turtlechuck",
-
 "what a huge hit from Leon Draisaitl",
 "Darnell Nurse says I'm going to remember that",
 "Kassian started swinging, Tkachuck was not ready to go.", 
