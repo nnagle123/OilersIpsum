@@ -59,6 +59,9 @@ $(function() {
 "The big Fin stole that goal!",
 "That's the save of the game",
 "lightning fast",
+"cops on When Pigs Fly",
+"Torres hitting lines",
+"Picking up at the Ranch",
 "1983–84 Stanley Cup Champions.",
 "1984–85 Stanley Cup Champions.",
 "1986–87 Stanley Cup Champions.",
@@ -104,6 +107,7 @@ $(function() {
 "here's a left from Nugent-Hopkins.",
 "the battle of Alberta",
 "Turtlechuck",
+
 "what a huge hit from Leon Draisaitl",
 "Darnell Nurse says I'm going to remember that",
 "Kassian started swinging, Tkachuck was not ready to go.", 
